@@ -1,0 +1,368 @@
+%% LyX 2.4.0~RC3 created this file.  For more info, see https://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[ngerman]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[landscape,a4paper]{geometry}
+\geometry{verbose,tmargin=2cm,bmargin=1cm,lmargin=1cm,rmargin=1cm}
+\usepackage{array}
+\usepackage{varwidth}
+\usepackage{xltabular}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+%% Variable width box for table cells
+\newenvironment{cellvarwidth}[1][t]
+    {\begin{varwidth}[#1]{\linewidth}}
+    {\@finalstrut\@arstrutbox\end{varwidth}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{cellspace}
+\setlength\cellspacetoplimit{5pt}
+\setlength\cellspacebottomlimit{5pt}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+\begin{center}
+{\Large\textbf{Offizielles Hilfsblatt für die Klausur Regelungstechnik
+1, Seite 1/2}}{\Large\par}
+\par\end{center}
+
+\begin{center}
+Prof. Dr.-Ing. Jens Geisler, Hochschule Flensburg, Stand: \today
+\par\end{center}
+
+\begin{xltabular}[c]{2cm}{|c|c|c|c|c|c|c|c|}
+\hline 
+ & Differenzialgleichung
+\begin{varwidth}{\linewidth}
+\rule{0pt}{1.4cm}
+\end{varwidth}
+ & \begin{cellvarwidth}[m]
+\centering
+Übertragungsfunktion\\
+$G(s)$
+\end{cellvarwidth} & \begin{cellvarwidth}[m]
+\centering
+Übergangsfunktion
+
+$h(t)$
+\end{cellvarwidth} & \begin{cellvarwidth}[m]
+\centering
+Ortskurve\\
+$G(\textrm{j}\omega)$
+\end{cellvarwidth} & \begin{cellvarwidth}[m]
+\centering
+Bode-\\
+Amplitudengang
+\end{cellvarwidth} & \begin{cellvarwidth}[m]
+\centering
+Bode-\\
+Phasengang
+\end{cellvarwidth} & \begin{cellvarwidth}[m]
+\centering
+Pol-Nullstellen-\\
+Diagramm
+\end{cellvarwidth}\tabularnewline
+\hline 
+\endhead
+\hline 
+PT1 & $T\dot{x}_{a}(t)+x_{a}(t)=K\cdot x_{e}(t)$ & $\frac{K}{Ts+1}$
+\begin{varwidth}{\linewidth}
+\rule{0pt}{2.2cm}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconStep_PT1}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconNyquist_PT1}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconBodeA_PT1}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconBodeP_PT1}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconPoleZero_PT1}
+\end{varwidth}
+\tabularnewline
+\hline 
+PT2 & \begin{cellvarwidth}[m]
+\centering
+~$\begin{gathered}T_{1}T_{2}\ddot{x}_{a}(t)+(T_{1}+T_{2})\dot{x}_{a}(t)+x_{a}(t)\\
+=K\cdot x_{e}(t)
+\end{gathered}
+$\\
+{\footnotesize (aus 2 PT1-Gliedern)}
+\end{cellvarwidth} & $\frac{K}{\left(T_{1}s+1\right)\left(T_{2}s+1\right)}$
+\begin{varwidth}{\linewidth}
+\rule{0pt}{2.2cm}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconStep_PT1x2}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconNyquist_PT1x2}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconBodeA_PT1x2}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconBodeP_PT1x2}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconPoleZero_PT1x2}
+\end{varwidth}
+\tabularnewline
+\hline 
+PT2 & \begin{cellvarwidth}[m]
+\centering
+$\begin{gathered}\omega_{0}^{-2}\ddot{x}_{a}(t)+2D\omega_{0}^{-1}\dot{x}_{a}(t)+x_{a}(t)\\
+=K\cdot x_{e}(t)
+\end{gathered}
+$\\
+{\footnotesize (schwingfähig)}
+\end{cellvarwidth} & $\frac{K}{\frac{1}{\omega_{0}^{2}}s^{2}+\frac{2D}{\omega_{0}}s+1}$
+\begin{varwidth}{\linewidth}
+\rule{0pt}{2.2cm}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconStep_PT2}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconNyquist_PT2}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconBodeA_PT2}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconBodeP_PT2}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconPoleZero_PT2}
+\end{varwidth}
+\tabularnewline
+\hline 
+IT1 & $T\ddot{x}_{a}(t)+\dot{x}_{a}(t)=K\cdot x_{e}(t)$ & $\frac{K}{s\left(Ts+1\right)}$
+\begin{varwidth}{\linewidth}
+\rule{0pt}{2.2cm}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconStep_IT1}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconNyquist_IT1}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconBodeA_IT1}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconBodeP_IT1}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconPoleZero_IT1}
+\end{varwidth}
+\tabularnewline
+\hline 
+DT1 & $T\dot{x}_{a}(t)+x_{a}(t)=K\cdot\dot{x}_{e}(t)$ & $\frac{K\cdot s}{Ts+1}$
+\begin{varwidth}{\linewidth}
+\rule{0pt}{2.2cm}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconStep_DT1}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconNyquist_DT1}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconBodeA_DT1}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconBodeP_DT1}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconPoleZero_DT1}
+\end{varwidth}
+\tabularnewline
+\hline 
+\end{xltabular}
+
+\pagebreak{}
+\begin{center}
+{\Large\textbf{Offizielles Hilfsblatt für die Klausur Regelungstechnik
+1, Seite 2/2}}{\Large\par}
+\par\end{center}
+
+\begin{center}
+Prof. Dr.-Ing. Jens Geisler, Hochschule Flensburg, Stand: \today
+\par\end{center}
+
+\begin{xltabular}[c]{2cm}{|c|c|c|c|c|c|c|c|}
+\hline 
+ & Differenzialgleichung
+\begin{varwidth}{\linewidth}
+\rule{0pt}{1.4cm}
+\end{varwidth}
+ & \begin{cellvarwidth}[m]
+\centering
+Übertragungsfunktion\\
+$G(s)$
+\end{cellvarwidth} & \begin{cellvarwidth}[m]
+\centering
+Übergangsfunktion
+
+$h(t)$
+\end{cellvarwidth} & \begin{cellvarwidth}[m]
+\centering
+Ortskurve\\
+$G(\textrm{j}\omega)$
+\end{cellvarwidth} & \begin{cellvarwidth}[m]
+\centering
+Bode-\\
+Amplitudengang
+\end{cellvarwidth} & \begin{cellvarwidth}[m]
+\centering
+Bode-\\
+Phasengang
+\end{cellvarwidth} & \begin{cellvarwidth}[m]
+\centering
+Pol-Nullstellen-\\
+Diagramm
+\end{cellvarwidth}\tabularnewline
+\hline 
+\endhead
+\hline 
+PI & $y(t)=K_{R}\left(e(t)+\frac{1}{T_{N}}\int e(t)\thinspace\textrm{d}\tau\right)$ & $K_{R}\frac{T_{N}s+1}{T_{N}s}$
+\begin{varwidth}{\linewidth}
+\rule{0pt}{2.2cm}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconStep_PI}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconNyquist_PI}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconBodeA_PI}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconBodeP_PI}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconPoleZero_PI}
+\end{varwidth}
+\tabularnewline
+\hline 
+PD & $x_{a}(t)=K_{R}\left(e(t)+T_{V}\frac{\textrm{d}}{\textrm{d}t}e(t)\right)$ & $K_{R}\left(T_{V}s+1\right)$
+\begin{varwidth}{\linewidth}
+\rule{0pt}{2.2cm}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconStep_PD}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconNyquist_PD}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconBodeA_PD}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconBodeP_PD}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconPoleZero_PD}
+\end{varwidth}
+\tabularnewline
+\hline 
+PDT1 & $\begin{gathered}T_{p}\dot{x}_{a}(t)+x_{a}(t)\\
+=K_{R}\left(e(t)+T_{V}\frac{\textrm{d}}{\textrm{d}t}e(t)\right)
+\end{gathered}
+$ & $K_{R}\frac{T_{V}s+1}{T_{p}s+1}$
+\begin{varwidth}{\linewidth}
+\rule{0pt}{2.2cm}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconStep_PDT1}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconNyquist_PDT1}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconBodeA_PDT1}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconBodeP_PDT1}
+\end{varwidth}
+ & 
+\begin{varwidth}{\linewidth}
+\includegraphics{IconPoleZero_PDT1}
+\end{varwidth}
+\tabularnewline
+\hline 
+P & 
+\begin{varwidth}{\linewidth}
+\rule{0pt}{2.2cm}
+\end{varwidth}
+ &  &  &  &  &  & \tabularnewline
+\hline 
+I & 
+\begin{varwidth}{\linewidth}
+\rule{0pt}{2.2cm}
+\end{varwidth}
+ &  &  &  &  &  & \tabularnewline
+\hline 
+D & 
+\begin{varwidth}{\linewidth}
+\rule{0pt}{2.2cm}
+\end{varwidth}
+ &  &  &  &  &  & \tabularnewline
+\hline 
+\end{xltabular}
+\end{document}

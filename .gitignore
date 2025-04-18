@@ -1,0 +1,4 @@
+*.pdf
+*.asv
+*.lyx~
+!Hilfsblatt RT1.pdf
